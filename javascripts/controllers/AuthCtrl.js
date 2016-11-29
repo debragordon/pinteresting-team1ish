@@ -3,6 +3,11 @@
 app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, UserFactory) {
     $scope.loginContainer = true;
     $scope.registerContainer = false;
+    $scope.login = {
+        email: "a@a.com",
+        password: "123456"
+    };
+
     $scope.googleLoginContainer = false;
 
     if($location.path() === "/logout") {
@@ -20,7 +25,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             console.log("userCreds", userCreds);
             $scope.login = {};
             $scope.register = {};
-            $location.url(`/boards/list`);
+            $location.url(`/allpins/list`);
         });
     };
 
@@ -34,7 +39,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
         $scope.loginContainer = false;
         $scope.registerContainer = true;
         $scope.googleLoginContainer = false;
-    };    
+    };
 
     $scope.setGoogleLoginContainer = () => {
         $scope.loginContainer = false;
@@ -54,7 +59,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
 
     $scope.loginUser = (loginNewUser) => {
         logMeIn(loginNewUser);
-    };    
+    };
 
     $scope.googleLoginUser = () => {
         AuthFactory.authenticateGoogle().then((userData) => {

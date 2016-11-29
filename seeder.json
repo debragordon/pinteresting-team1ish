@@ -1,5 +1,5 @@
 {
-   "pins":{
+   "userpins":{
         "pin0":{
         "title": "Ha ha, stupid gator",
         "boardid": "board0",
@@ -19,7 +19,7 @@
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         }
     },
-       "userpins":{
+       "pins":{
         "pin0":{
         "title": "Ha ha, stupid gator",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",

@@ -9,26 +9,13 @@
     </div>
 </div>
 
-<h3>Todo</h3>
-<div ng-repeat="item in items | filter:{isCompleted:false} | filter:searchText">
+<h3>Default Pins</h3>
+<div ng-repeat="pin in pins">
     <div class="panel panel-default">
         <div class="panel-body">
-            <div class="col-xs-1"><input type="checkbox" name="" ng-model="item.isCompleted" ng-change="inputChange(item)"></div>
-            <div class="col-xs-9"><a href="#/items/view/{{item.id}}">{{item.task}}</a></div>
-            <div class="col-xs-1">{{item.assignedTo}}</div>
-            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteItem(item.id)" ></button></div>
-        </div>
-    </div>
-</div>
-
-<h3>Completed</h3>
-<div ng-repeat="item in items | filter:{isCompleted:true}">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="col-xs-1"><input type="checkbox" name="" ng-model="item.isCompleted" ng-change="inputChange(item)"></div>
-            <div class="col-xs-9"><a href="#/items/view/{{item.id}}">{{item.task}}</a></div>
-            <div class="col-xs-1">{{item.assignedTo}}</div>
-            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteItem(item.id)"></button></div>
+            <div class="col-xs-9"><a href="#/pins/view/{{pin.id}}">{{pin.title}}</a></div>
+            <!-- <div class="col-xs-1">{{pin.assignedTo}}</div> -->
+            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deletepin(pin.id)" ></button></div>
         </div>
     </div>
 </div>
