@@ -1,7 +1,8 @@
  <div class="container col-xs-6 col-xs-offset-3">
     <div class="row">
-        <button class="btn btn-info col-xs-6" ng-click="setLoginContainer()">Login</button>
-        <button class="btn btn-success col-xs-6" ng-click="setRegisterContainer()">Register</button>
+        <button class="btn btn-info col-xs-4" ng-click="setLoginContainer()">Login</button>
+        <button class="btn btn-success col-xs-4" ng-click="setRegisterContainer()">Register</button>
+        <button class="btn btn-primary col-xs-4" ng-click="setGoogleLoginContainer()">Google</button>
     </div>
         <div class="row">
         <form ng-show="loginContainer">
@@ -32,6 +33,11 @@
             </div>
             <div class="form-group">
                 <a class="btn btn-lg btn-success col-xs-offset-1 col-xs-10" ng-click="registerUser(register)">Submit Registeration</a>
+            </div>
+        </form>
+        <form ng-show="googleLoginContainer">
+            <div class="form-group">
+                <a class="btn btn-lg btn-primary col-xs-offset-1 col-xs-10" ng-click="googleLoginUser(register)">Google Login</a>
             </div>
         </form>
     </div>
