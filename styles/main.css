@@ -73,3 +73,6 @@ ul li.editMode label {
 .default_pins img {
   width: 100%;
   height: 100%; }
+
+.boards {
+  border: 1px solid black; }
