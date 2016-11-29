@@ -9,7 +9,6 @@ app.controller("BoardListCtrl", function($scope, $rootScope, BoardFactory) {
             $scope.boards = fbBoards;
         });
     };
-
     getBoards();
 
     $scope.deleteBoard = function(boardId) {

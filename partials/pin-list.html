@@ -10,12 +10,39 @@
 </div>
 
 <h3>Default Pins</h3>
-<div ng-repeat="pin in pins">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="col-xs-9"><a href="#/pins/view/{{pin.id}}">{{pin.title}}</a></div>
-            <!-- <div class="col-xs-1">{{pin.assignedTo}}</div> -->
-            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deletepin(pin.id)" ></button></div>
+<div class="default_pins" ng-repeat="pin in pins">
+    <div class="col-xs-4">
+        <div class="card">
+          <img class="card-img-top" src="http://www.gatorcapital.com/Media/Default/Homepage%20Rotator/img1.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">{{pin.title}}</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div ng-repeat="board in boards">
+              <a  class="btn btn-primary" ng-click="addPinToBoard(pin, board.id)">Save To {{board.id}}</a> <!-- data-toggle="modal" data-target="#add_to_board" -->
+            </div>
+          </div>
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="add_to_board" role="dialog">
+<div class="modal-dialog"> -->
+
+  <!-- Modal content-->
+<!--   <div class="modal-content" ng-controller="BoardListCtrl">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Which board would you like to save to?</h4>
+    </div>
+    <div class="modal-body" ng-repeat="board in boards">
+      <a  class="btn btn-primary" data-toggle="modal" data-target="#add_to_board" ng-click="addPinToBoard()">{{board.id}}</a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+</div>
+</div> -->
+
