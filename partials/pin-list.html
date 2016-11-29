@@ -18,31 +18,11 @@
             <h4 class="card-title">{{pin.title}}</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <div ng-repeat="board in boards">
-              <a  class="btn btn-primary" ng-click="addPinToBoard(pin, board.id)">Save To {{board.id}}</a> <!-- data-toggle="modal" data-target="#add_to_board" -->
+              <a  class="btn btn-primary" ng-click="addPinToBoard(pin, board.id)">Save To {{board.id}}</a>
             </div>
           </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="add_to_board" role="dialog">
-<div class="modal-dialog"> -->
-
-  <!-- Modal content-->
-<!--   <div class="modal-content" ng-controller="BoardListCtrl">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <h4 class="modal-title">Which board would you like to save to?</h4>
-    </div>
-    <div class="modal-body" ng-repeat="board in boards">
-      <a  class="btn btn-primary" data-toggle="modal" data-target="#add_to_board" ng-click="addPinToBoard()">{{board.id}}</a>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-
-</div>
-</div> -->
 

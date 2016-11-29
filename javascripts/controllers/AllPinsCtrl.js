@@ -10,8 +10,7 @@ app.controller('AllPinsCtrl',function($scope, $rootScope, PinFactory, BoardFacto
             $scope.pins = response;
         });
     };
-
-    getPins();
+    getPins(); // populating $scope.pins
 
     let getBoards = () => {
         BoardFactory.getBoardList($rootScope.user.uid).then((response) => {
@@ -19,15 +18,7 @@ app.controller('AllPinsCtrl',function($scope, $rootScope, PinFactory, BoardFacto
             console.log("$scope.boards", $scope.boards);
         });
     };
-
-    getBoards();
-
-    $scope.savePin = (pin) => {
-        console.log("pin", pin);
-        // PinFactory.deletePin(pinId).then((response) => {
-        //     getPins();
-        // });
-    };
+    getBoards(); // populating $scope.boards
 
     $scope.addPinToBoard = function(newPin, boardId) {
         console.log("You added a pin!", newPin);
@@ -35,13 +26,7 @@ app.controller('AllPinsCtrl',function($scope, $rootScope, PinFactory, BoardFacto
         newPin.boardid = boardId;
         newPin.uid = $rootScope.user.uid;
         console.log(newPin);
-        PinFactory.postNewPinToBoard(newPin).then(() => {
-            console.log("test");
-        });
-        // BoardFactory.getBoardList($rootScope.user.uid).then(function(response) {
-        //     // BoardFactory.getBoards();
-        //     console.log(response);
-        // });
+        PinFactory.postNewPinToBoard(newPin);
     };
 
 });
