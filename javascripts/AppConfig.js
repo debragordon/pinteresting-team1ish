@@ -41,7 +41,7 @@ app.config(function($routeProvider) {
         })
         .when('/boards/list', {
             templateUrl: 'partials/board-list.html',
-            controller: 'BoardNewCtrl',
+            controller: 'BoardListCtrl',
             resolve: {isAuth}
         })
         .when('/boards/view/:id', { // colon means the value will change
@@ -62,6 +62,11 @@ app.config(function($routeProvider) {
         .when('/pins/new', {
             templateUrl: 'partials/pin-new.html',
             controller: 'PinNewCtrl',
+            resolve: {isAuth}
+        })
+        .when('/allpins/list', {
+            templateUrl: 'partials/pin-list.html',
+            controller: 'AllPinsCtrl',
             resolve: {isAuth}
         })
         .when('/pins/view/:id', { // colon means the value will change

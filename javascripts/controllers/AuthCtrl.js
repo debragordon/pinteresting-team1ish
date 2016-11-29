@@ -3,6 +3,11 @@
 app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, UserFactory) {
     $scope.loginContainer = true;
     $scope.registerContainer = false;
+    $scope.login = {
+        email: "a@a.com",
+        password: "123456"
+    };
+
 
     if($location.path() === "/logout") {
         AuthFactory.logout();
@@ -18,7 +23,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             $rootScope.user = userCreds;
             $scope.login = {};
             $scope.register = {};
-            $location.url(`/boards/list`);
+            $location.url(`/allpins/list`);
         });
     };
 
