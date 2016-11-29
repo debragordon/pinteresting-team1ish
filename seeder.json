@@ -1,0 +1,32 @@
+{
+   "items":{
+        "item0":{
+        "task": "mow the lawn",
+        "isCompleted": true,
+        "assignedTo": "Zoe",
+        "uid":"k7cK9XH2sJcqxOBwx4TWaq2L1ho2"
+        },
+    "item1":{
+        "task": "mow the grass",
+        "isCompleted": false,
+        "assignedTo": "zoe",
+        "uid":"k7cK9XH2sJcqxOBwx4TWaq2L1ho2"
+        },
+    "item2":{
+        "task": "clean the house",
+        "isCompleted": false,
+        "assignedTo": "justin",
+        "uid":"R4n4AYqSgjZVkskVLlWIPhOqQVY2"
+        }
+    },
+    "users": {
+        "user0": {
+            "uid": "k7cK9XH2sJcqxOBwx4TWaq2L1ho2",
+            "username": "a"
+        },
+        "user1": {
+            "uid": "R4n4AYqSgjZVkskVLlWIPhOqQVY2",
+            "username": "b"
+        }
+    }
+}
