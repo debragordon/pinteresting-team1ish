@@ -1,17 +1,17 @@
 "use strict";
 
-app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
+app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
 
-    var getItemList = function(userId) {
+    var getPinList = function(userId) {
         return $q((resolve, reject) => {
-            $http.get(`${FIREBASE_CONFIG.databaseURL}/items.json?orderBy="uid"&equalTo="${userId}"`)
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/pins.json?orderBy="uid"&equalTo="${userId}"`)
             .success((response) => {
-                let items = [];
+                let pins = [];
                 Object.keys(response).forEach((key) => {
                     response[key].id = key;
-                    items.push(response[key]);
+                    pins.push(response[key]);
                 });
-                resolve(items);
+                resolve(pins);
             })
             .error((errorResponse) => {
                 reject(errorResponse);
@@ -19,14 +19,14 @@ app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    var postNewItem = function(newItem) {
+    var postNewPin = function(newPin) {
         return $q((resolve, reject)  => {
-            $http.post(`${FIREBASE_CONFIG.databaseURL}/items.json`,
+            $http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`,
                     JSON.stringify({
-                        assignedTo: newItem.assignedTo,
-                        isCompleted: newItem.isCompleted,
-                        task: newItem.task,
-                        uid: newItem.uid
+                        assignedTo: newPin.assignedTo,
+                        isCompleted: newPin.isCompleted,
+                        task: newPin.task,
+                        uid: newPin.uid
                     })
                 )
             .success((postResponse) => {
@@ -38,9 +38,9 @@ app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    var deleteItem = function(itemId) {
+    var deletePin = function(pinId) {
         return $q((resolve, reject) => {
-            $http.delete(`${FIREBASE_CONFIG.databaseURL}/items/${itemId}.json`)
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
             .success((deleteResponse) => {
                 resolve(deleteResponse);
             })
@@ -50,9 +50,9 @@ app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    var getSingleItem = function(itemId) {
+    var getSinglePin = function(pinId) {
         return $q((resolve, reject) => {
-            $http.get(`${FIREBASE_CONFIG.databaseURL}/items/${itemId}.json`)
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
             .success((getSingleResponse) => {
                 resolve(getSingleResponse);
             })
@@ -62,15 +62,15 @@ app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-       var editItem = function(editItem) {
-        console.log("factory edit", editItem);
+       var editPin = function(editPin) {
+        console.log("factory edit", editPin);
         return $q((resolve, reject)  => {
-            $http.put(`${FIREBASE_CONFIG.databaseURL}/items/${editItem.id}.json`,
+            $http.put(`${FIREBASE_CONFIG.databaseURL}/pins/${editPin.id}.json`,
                     JSON.stringify({
-                        assignedTo: editItem.assignedTo,
-                        isCompleted: editItem.isCompleted,
-                        task: editItem.task,
-                        uid: editItem.uid
+                        assignedTo: editPin.assignedTo,
+                        isCompleted: editPin.isCompleted,
+                        task: editPin.task,
+                        uid: editPin.uid
                     })
                 )
             .success((editResponse) => {
@@ -82,6 +82,6 @@ app.factory("ItemFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return {getItemList: getItemList, postNewItem: postNewItem, deleteItem: deleteItem, getSingleItem: getSingleItem, editItem: editItem};
+    return {getPinList: getPinList, postNewPin: postNewPin, deletePin: deletePin, getSinglePin: getSinglePin, editPin: editPin};
 
 });
