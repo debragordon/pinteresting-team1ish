@@ -69,3 +69,10 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
   display: none; }
+
+.default_pins img {
+  width: 100%;
+  height: 100%; }
+
+.boards {
+  border: 1px solid black; }
