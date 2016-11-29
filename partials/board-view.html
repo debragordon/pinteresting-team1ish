@@ -8,13 +8,16 @@
         </div>
     </div>
 </div>
-
-<h3>Default Pins</h3>
-<div ng-repeat="pin in pins">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="col-xs-9"><a href="#/pins/view/{{pin.id}}">{{pin.title}}</a></div>
-            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deletepin(pin.id)" ></button></div>
+<h4>Current Pins in Board</h4>
+<div class="default_pins" ng-repeat="pin in pins">
+    <div class="col-xs-4 pins">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">{{pin.title}}</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a  class="btn btn-danger" ng-click="deletePinFromBoard(pin.id)">Delete From Board</a>
+            <!-- <button class="btn btn-danger fa fa-trash-o" ng-click="deleteBoard(board.id)" ></button> -->
+          </div>
         </div>
     </div>
 </div>

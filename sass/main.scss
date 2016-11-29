@@ -99,8 +99,9 @@ ul li.editMode label {
   }
 }
 
-// styling for boards
-.boards {
+// border for boards/pins
+.boards,
+.pins {
   border: 1px solid black;
 }
 

@@ -86,6 +86,18 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
+    var deleteBoardPin = function(pinId) {
+        return $q((resolve, reject) => {
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/userpins/${pinId}.json`)
+            .success((deleteResponse) => {
+                resolve(deleteResponse);
+            })
+            .error((deleteError) => {
+                reject(deleteError);
+            });
+        });
+    };
+
     var getSinglePin = function(pinId) {
         return $q((resolve, reject) => {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/pins/${pinId}.json`)
@@ -124,7 +136,8 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
             getSinglePin: getSinglePin,
             editPin: editPin,
             getAllPins: getAllPins,
-            postNewPinToBoard: postNewPinToBoard
+            postNewPinToBoard: postNewPinToBoard,
+            deleteBoardPin: deleteBoardPin
         };
 
 });
