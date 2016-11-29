@@ -38,11 +38,11 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
 
     var postNewPin = function(newPin) {
         return $q((resolve, reject)  => {
-            $http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`,
+            $http.post(`${FIREBASE_CONFIG.databaseURL}/userpins.json`,
                     JSON.stringify({
-                        assignedTo: newPin.assignedTo,
-                        isCompleted: newPin.isCompleted,
-                        task: newPin.task,
+                        boardid: newPin.boardid,
+                        title: newPin.title,
+                        url: newPin.url,
                         uid: newPin.uid
                     })
                 )
