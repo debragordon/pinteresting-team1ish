@@ -34,24 +34,44 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/auth.html',
             controller: 'AuthCtrl'
         })
-        .when('/items/list', {
-            templateUrl: 'partials/item-list.html',
-            controller: 'ItemListCtrl',
+        .when('/boards/new', {
+            templateUrl: 'partials/board-new.html',
+            controller: 'BoardNewCtrl',
             resolve: {isAuth}
         })
-        .when('/items/new', {
-            templateUrl: 'partials/item-new.html',
-            controller: 'ItemNewCtrl',
+        .when('/boards/list', {
+            templateUrl: 'partials/board-list.html',
+            controller: 'BoardNewCtrl',
             resolve: {isAuth}
         })
-        .when('/items/view/:id', { // colon means the value will change
-            templateUrl: 'partials/item-view.html',
-            controller: 'ItemViewCtrl',
+        .when('/boards/view/:id', { // colon means the value will change
+            templateUrl: 'partials/board-view.html',
+            controller: 'BoardViewCtrl',
             resolve: {isAuth}
         })
-        .when('/items/edit/:id', {
-            templateUrl: 'partials/item-new.html',
-            controller: 'ItemEditCtrl',
+        .when('/boards/edit/:id', {
+            templateUrl: 'partials/board-new.html',
+            controller: 'BoardEditCtrl',
+            resolve: {isAuth}
+        })
+        .when('/pins/list', {
+            templateUrl: 'partials/pin-list.html',
+            controller: 'PinListCtrl',
+            resolve: {isAuth}
+        })
+        .when('/pins/new', {
+            templateUrl: 'partials/pin-new.html',
+            controller: 'PinNewCtrl',
+            resolve: {isAuth}
+        })
+        .when('/pins/view/:id', { // colon means the value will change
+            templateUrl: 'partials/pin-view.html',
+            controller: 'PinViewCtrl',
+            resolve: {isAuth}
+        })
+        .when('/pins/edit/:id', {
+            templateUrl: 'partials/pin-new.html',
+            controller: 'PinEditCtrl',
             resolve: {isAuth}
         })
         .when('/logout', {
