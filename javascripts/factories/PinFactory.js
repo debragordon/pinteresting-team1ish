@@ -36,17 +36,20 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    var postNewPin = function(newPin) {
+    var postNewPin = function(newPin, boardId) {
+      console.log("boardId1", boardId);
         return $q((resolve, reject)  => {
-            $http.post(`${FIREBASE_CONFIG.databaseURL}/userpins.json`,
+            $http.post(`${FIREBASE_CONFIG.databaseURL}/pins.json`,
                     JSON.stringify({
-                        boardid: newPin.boardid,
                         title: newPin.title,
                         url: newPin.url,
                         uid: newPin.uid
                     })
                 )
             .success((postResponse) => {
+              console.log({postResponse});
+              console.log("boardId2", boardId);
+              postNewPinToBoard(newPin, boardId);
                 resolve(postResponse);
             })
             .error((postError) => {
@@ -55,11 +58,11 @@ app.factory("PinFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    var postNewPinToBoard = function(newPin) {
+    var postNewPinToBoard = function(newPin, boardId) {
         return $q((resolve, reject)  => {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/userpins.json`,
                     JSON.stringify({
-                        boardid: newPin.boardid,
+                        boardid: boardId,
                         title: newPin.title,
                         url: newPin.url,
                         uid: newPin.uid
