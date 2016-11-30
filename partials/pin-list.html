@@ -15,10 +15,10 @@
 <div class="default_pins" ng-repeat="pin in pins | filter: searchText">
     <div class="col-xs-4">
         <div class="card">
-            <img class="card-img-top" src="http://www.gatorcapital.com/Media/Default/Homepage%20Rotator/img1.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{{pin.url}}" alt="Card image cap">
             <div class="card-block">
                 <h4 class="card-title">{{pin.title}}</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">{{pin.description}}</p>
                 <div >
 
                     <label for="sel1">PIN to Board:</label>

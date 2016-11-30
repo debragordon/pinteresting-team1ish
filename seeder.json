@@ -1,82 +1,97 @@
 {
-   "userpins":{
+    "userpins":{
         "pin0":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator",
+        "description": "gator eating something",
+        "url": "http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxoQuTRyLgaU989raZXWOAzAez0gTjrSISRB9SRUDMYaFi/",
         "boardid": "board0",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
         },
         "pin1":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator",
+        "description": "gator doing something",
+        "url": "http://img.wennermedia.com/article-leads-horizontal/alligator-attack-zoom-d1f4afc5-a2fc-4e92-80b8-f5d43c0a7057.jpg",
         "boardid": "board1",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
         },
         "pin2":{
         "title": "Ha ha, stupid gator",
-        "boardid": "board2",
+        "description": "gator doing something",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
+        "boardid": "board2",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         }
-        },
-       "pins":{
+    },
+    "pins":{
         "pin0":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 1",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
         },
         "pin1":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 2",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
         },
         "pin2":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 3",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin3":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 4",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin4":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 5",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin5":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 6",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin6":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 7",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin7":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 8",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin8":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 9",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin9":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 10",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin10":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 11",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
         "pin11":{
-        "title": "Ha ha, stupid gator",
+        "title": "Gator 12",
+        "description": "something cool here",
         "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
         "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         }
@@ -98,23 +113,23 @@
     "boards": {
         "board0": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Title 1",
+            "title": "Gators",
             "desc": "This board talks about how cool gators are!!"
         },
         "board1": {
             "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2",
-            "title": "Title 2",
-            "desc": "This board talks about how smart gators are!!"
+            "title": "Puppies",
+            "desc": "Dogs are the best!!"
         },
         "board2": {
             "uid": "rJhVIGONjheiKDIIGSSX5kx76e43",
-            "title": "Title 3",
-            "desc": "This board talks about how dumb gators are!!"
+            "title": "Kittens",
+            "desc": "Aren't cats cool!!"
         },
         "board3": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Title 4",
-            "desc": "This board talks about how cool gators are!!"
+            "title": "Scary",
+            "desc": "These things freak me out!!"
         }
     }
 }
