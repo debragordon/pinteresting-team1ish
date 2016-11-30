@@ -13,10 +13,9 @@ app.controller("PinNewCtrl", function($scope, $location, $rootScope, PinFactory,
 
     $scope.addNewPin = (newPin, boardid) => {
         $scope.newPin.uid = $rootScope.user.uid;
-        $scope.newPin.boardid = boardid;
         // might be a problem if the user has multiple boards....
         console.log("newPin = ", newPin);
-        PinFactory.postNewPin($scope.newPin).then((pinId) => {
+        PinFactory.postNewPin($scope.newPin, boardid).then((pinId) => {
             $location.url("/allpins/list");
             $scope.newPin = {};
         });

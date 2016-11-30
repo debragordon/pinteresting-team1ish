@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller('AllPinsCtrl',function($scope, $rootScope, PinFactory, BoardFactory){
+app.controller('AllPinsCtrl', function($scope, $rootScope, PinFactory, BoardFactory) {
     $scope.pins = {};
     $scope.searchText = "";
     $scope.boards = {};
@@ -22,11 +22,10 @@ app.controller('AllPinsCtrl',function($scope, $rootScope, PinFactory, BoardFacto
 
     $scope.addPinToBoard = function(newPin, boardId) {
         console.log("You added a pin!", newPin);
-        console.log("$rootScope",$rootScope.user.uid);
-        newPin.boardid = boardId;
+        console.log("$rootScope", $rootScope.user.uid);
+        console.log("boardId", boardId);
         newPin.uid = $rootScope.user.uid;
         console.log(newPin);
-        PinFactory.postNewPinToBoard(newPin);
+        PinFactory.postNewPinToBoard(newPin, boardId);
     };
-
 });
