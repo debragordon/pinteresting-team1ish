@@ -1,14 +1,23 @@
 "use strict";
 
-app.controller("PinNewCtrl", function($scope, $location, $rootScope, PinFactory) {
+app.controller("PinNewCtrl", function($scope, $location, $rootScope, PinFactory, BoardFactory) {
     $scope.newPin = {};
+    $scope.boards = {};
 
-    $scope.addNewPin = () => {
-        $scope.newPin.isCompleted = false;
+    let getBoards = () => {
+        BoardFactory.getBoardList($rootScope.user.uid).then((response) => {
+            $scope.boards = response;
+        });
+    };
+    getBoards();
+
+    $scope.addNewPin = (newPin, boardid) => {
         $scope.newPin.uid = $rootScope.user.uid;
-        console.log("newPin in function", $scope.newPin);
+        $scope.newPin.boardid = boardid;
+        // might be a problem if the user has multiple boards....
+        console.log("newPin = ", newPin);
         PinFactory.postNewPin($scope.newPin).then((pinId) => {
-            $location.url("/pins/list");
+            $location.url("/allpins/list");
             $scope.newPin = {};
         });
     };
