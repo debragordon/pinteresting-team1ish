@@ -2,7 +2,7 @@
 
 app.controller('BoardViewCtrl',function($scope, $routeParams, $rootScope, PinFactory, BoardFactory){
     $scope.selectedBoard = {};
-    $scope.pins = [];
+    $scope.pins = {};
     let boardId = $routeParams.id;
 
     let getPins = () => {
