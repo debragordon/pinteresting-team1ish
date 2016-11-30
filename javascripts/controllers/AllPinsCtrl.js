@@ -1,9 +1,9 @@
 "use strict";
 
 app.controller('AllPinsCtrl', function($scope, $rootScope, PinFactory, BoardFactory) {
-    $scope.pins = {};
+    $scope.pins = [];
     $scope.searchText = "";
-    $scope.boards = {};
+    $scope.boards = [];
 
     let getPins = function() {
         PinFactory.getAllPins().then((response) => {

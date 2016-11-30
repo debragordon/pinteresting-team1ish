@@ -6,7 +6,12 @@
         <label>Image url:</label>
         <input type="text" class="form-control" placeholder="Image url" ng-model="newPin.url">
     </div>
-    <div ng-repeat="board in boards">
-        <button type="button" class="btn btn-primary btn-lg col-xs-2" ng-click="addNewPin(newPin, board.id)">Add to {{board.title}}</button>
+    <div class="form-group">
+        <label for="sel1">PIN to Board:</label>
+        <select ng-model="boardId" ng-change="addNewPin(newPin, boardId)">
+            <option value="">---</option>
+            <option ng-repeat="board in boards" value="{{board.id}}">Add to
+                {{board.title}}</option>
+        </select>
     </div>
 </form>
