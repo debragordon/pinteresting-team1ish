@@ -98,22 +98,22 @@
     "boards": {
         "board0": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Ha ha, stupid gator",
+            "title": "Title 1",
             "desc": "This board talks about how cool gators are!!"
         },
         "board1": {
             "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2",
-            "title": "Ha ha, smart gator",
+            "title": "Title 2",
             "desc": "This board talks about how smart gators are!!"
         },
         "board2": {
             "uid": "rJhVIGONjheiKDIIGSSX5kx76e43",
-            "title": "Ha ha, dumb gator",
+            "title": "Title 3",
             "desc": "This board talks about how dumb gators are!!"
         },
         "board3": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Ha ha, stupid gator",
+            "title": "Title 4",
             "desc": "This board talks about how cool gators are!!"
         }
     }
