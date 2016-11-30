@@ -23,9 +23,8 @@ app.factory("BoardFactory", function($q, $http, FIREBASE_CONFIG) {
         return $q((resolve, reject) => {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/boards.json`,
                     JSON.stringify({
-                        assignedTo: newBoard.assignedTo,
-                        isCompleted: newBoard.isCompleted,
-                        task: newBoard.task,
+                        title: newBoard.title,
+                        desc: newBoard.desc,
                         uid: newBoard.uid
                     })
                 )
