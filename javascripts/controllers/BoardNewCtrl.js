@@ -4,7 +4,6 @@ app.controller("BoardNewCtrl", function($scope, $location, $rootScope, BoardFact
     $scope.newBoard = {};
 
     $scope.addNewBoard = () => {
-        $scope.newBoard.isCompleted = false;
         $scope.newBoard.uid = $rootScope.user.uid;
         console.log("newBoard in function", $scope.newBoard);
         BoardFactory.postNewBoard($scope.newBoard).then((boardId) => {
