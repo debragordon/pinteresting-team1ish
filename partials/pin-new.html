@@ -7,6 +7,6 @@
         <input type="text" class="form-control" placeholder="Image url" ng-model="newPin.url">
     </div>
     <div ng-repeat="board in boards">
-        <button type="button" class="btn btn-primary btn-lg col-xs-2" ng-click="addNewPin(newPin, board.id)">Add to {{board.id}}</button>
+        <button type="button" class="btn btn-primary btn-lg col-xs-2" ng-click="addNewPin(newPin, board.id)">Add to {{board.title}}</button>
     </div>
 </form>
