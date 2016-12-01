@@ -19,11 +19,8 @@
                 <img class="card-img-top" src="{{pin.url}}" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">{{pin.title}}</h4><!-- Make this a link to a modal that shows the pin and the details -->
-
                     <p class="card-text">{{pin.description}}</p>
-
-                    <div >
-
+                    <div>
                         <label for="sel1">PIN to Board:</label>
                         <select ng-model="boardId" ng-change="addPinToBoard(pin, boardId)">
                             <option value="">---</option>
