@@ -9,15 +9,17 @@
     </div>
 </div>
 <h4>Current Pins in {{selectedBoard.title}}</h4>
-<div class="default_pins" ng-repeat="pin in pins">
-    <div class="col-xs-4 pins">
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">{{pin.title}}</h4>
-            <img src="{{pin.url}}" alt="">
-            <p class="card-text">{{pin.description}}</p>
-            <button class="btn btn-danger fa fa-trash-o" ng-click="deletePinFromBoard(pin.id)"></button>
-          </div>
+<div class="row">
+    <div class="default_pins" ng-repeat="pin in pins">
+        <div class="col-xs-4 pins">
+            <div class="card">
+              <div class="card-block">
+                <img src="{{pin.url}}" alt="">
+                <h4 class="card-title">{{pin.title}}</h4>
+                <p class="card-text">{{pin.description}}</p>
+                <button class="btn btn-danger fa fa-trash-o" ng-click="deletePinFromBoard(pin.id)"></button>
+              </div>
+            </div>
         </div>
     </div>
 </div>
