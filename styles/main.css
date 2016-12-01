@@ -38,7 +38,7 @@ h3 {
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
-  margin: 0; }
+  margin: 0 0 5px 0; }
 
 li * {
   float: left; }
@@ -76,7 +76,8 @@ ul li.editMode label {
 
 .boards,
 .pins {
-  border: 1px solid black; }
+  border: 1px solid black;
+  border-radius: 10px; }
 
 .card {
   padding: 10px; }
