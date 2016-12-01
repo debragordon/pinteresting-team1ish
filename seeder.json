@@ -1,84 +1,69 @@
 {
-   "userpins":{
-        "pin0":{
-        "title": "Ha ha, stupid gator",
-        "boardid": "board0",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
+    "userpins": {
+        "pin0": {
+            "title": "Gator",
+            "description": "gator eating something",
+            "url": "http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxoQuTRyLgaU989raZXWOAzAez0gTjrSISRB9SRUDMYaFi/",
+            "boardid": "board0",
+            "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
         },
-        "pin1":{
-        "title": "Ha ha, stupid gator",
-        "boardid": "board1",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
+        "pin1": {
+            "title": "Gator",
+            "description": "gator doing something",
+            "url": "http://img.wennermedia.com/article-leads-horizontal/alligator-attack-zoom-d1f4afc5-a2fc-4e92-80b8-f5d43c0a7057.jpg",
+            "boardid": "board0",
+            "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
         },
-        "pin2":{
-        "title": "Ha ha, stupid gator",
-        "boardid": "board2",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
+        "pin2": {
+            "title": "Ha ha, stupid gator",
+            "description": "gator chillin'",
+            "url": "http://outdoorlife.blogs.com/photos/uncategorized/2007/07/09/gator.jpg",
+            "boardid": "board0",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         }
+    },
+    "pins": {
+        "pin0": {
+            "title": "Dog",
+            "description": "singing in the rain",
+            "url": "http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg",
+            "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
         },
-       "pins":{
-        "pin0":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53"
+        "pin1": {
+            "title": "Dalmation",
+            "description": "cute dalmation",
+            "url": "http://i1382.photobucket.com/albums/ah245/PhotobucketMKTG/LOHP/Puppies.jpg",
+            "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
         },
-        "pin1":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2"
+        "pin2": {
+            "title": "Kid and Gator",
+            "description": "OMG ... I would never do this",
+            "url": "http://spacecoastdaily.com/wp-content/uploads/2016/04/Florida-15-Foot-Gator-800-LB-580-6.jpg",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
-        "pin2":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
+        "pin3": {
+            "title": "Bunch 'O Kittens",
+            "description": "I want all of these",
+            "url": "http://manninghamvet.com.au/sites/default/files/styles/large/public/images/article/cats.jpg",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
-        "pin3":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
+        "pin4": {
+            "title": "Trump",
+            "description": "How did this happen",
+            "url": "http://media.salon.com/2015/12/donald_trump64.jpg",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
-        "pin4":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
+        "pin5": {
+            "title": "Spider",
+            "description": "This thing's hairy!!",
+            "url": "http://i1.mirror.co.uk/incoming/article8566552.ece/ALTERNATES/s615b/Jumping-spider.jpg",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         },
-        "pin5":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin6":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin7":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin8":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin9":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin10":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
-        },
-        "pin11":{
-        "title": "Ha ha, stupid gator",
-        "url": "http://www.imgur.com/9rufrniuvnfu2vnefui",
-        "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
+        "pin6": {
+            "title": "The Dark",
+            "description": "Afraid of the dark?",
+            "url": "https://revcathie.files.wordpress.com/2015/01/afraid-of-the-dark.jpg",
+            "uid": "rJhVIGONjheiKDIIGSSX5kx76e43"
         }
     },
     "users": {
@@ -98,23 +83,23 @@
     "boards": {
         "board0": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Title 1",
+            "title": "Gators",
             "desc": "This board talks about how cool gators are!!"
         },
         "board1": {
             "uid": "ZZZckZ2szLdH3NYqLfaZOEqT1ru2",
-            "title": "Title 2",
-            "desc": "This board talks about how smart gators are!!"
+            "title": "Puppies",
+            "desc": "Dogs are the best!!"
         },
         "board2": {
             "uid": "rJhVIGONjheiKDIIGSSX5kx76e43",
-            "title": "Title 3",
-            "desc": "This board talks about how dumb gators are!!"
+            "title": "Kittens",
+            "desc": "Aren't cats cool!!"
         },
         "board3": {
             "uid": "pOGtGKI9xNag7R9wQFrhkhj21Q53",
-            "title": "Title 4",
-            "desc": "This board talks about how cool gators are!!"
+            "title": "Scary",
+            "desc": "These things freak me out!!"
         }
     }
 }

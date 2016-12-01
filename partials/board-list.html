@@ -10,14 +10,16 @@
 </div>
 
 <h3>Boards</h3>
-<div class="default_pins" ng-repeat="board in boards">
-    <div class="col-xs-4 boards">
-        <div class="card">
-          <div class="card-block">
-            <h4><a href="#/boards/view/{{board.id}}">{{board.title}}</a></h4>
-            <p class="card-text">{{board.desc}}</p>
-            <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteBoard(board.id)" ></button></div>
-          </div>
+<div class="row">
+    <div class="default_pins" ng-repeat="board in boards">
+        <div class="col-xs-6 boards">
+            <div class="card">
+                <div class="card-block">
+                    <h4><a href="#/boards/view/{{board.id}}">{{board.title}}</a></h4>
+                    <p class="card-text">{{board.desc}}</p>
+                    <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteBoard(board.id)" ></button></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
